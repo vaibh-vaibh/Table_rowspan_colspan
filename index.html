@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: aqua;
+            display: grid;
+            place-items: center;
+        }
+        table, td, tr{
+            border-collapse: collapse;
+            /* to remove space between border */
+        }
+        table{
+            margin-top: 10%;
+            
+        }
+        td{
+            text-align: center;
+        }
+        h1{
+            font-size: 50px;
+            color: blue;
+        }
+        p{
+            color: darkmagenta;
+            font-size: xx-large;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+    <h1 align="center">TABLE</h1>
+    <p align="center">rowspan have yellow color and colspan have red color</p>
+    <table border="1" height="50%" width="50%" >
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td colspan="2" bgcolor="red">2</td>
+        </tr>
+        <tr><td>3</td>
+        <td>4</td>
+        <td rowspan="4" bgcolor="yellow">10</td>
+    </tr>
+        <tr> <td>5</td>
+        <td>6</td></tr>
+        <tr><td>7</td>
+        <td rowspan="2" bgcolor="yellow">8</td></tr>
+        <tr><td>9</td></tr>
+    </tbody>
+    </table>
+
+</body>
+</html>
